@@ -1,5 +1,5 @@
 const mySym = Symbol("myKey1")
-
+//object Literals
 const JsUser = {
     name:"Ejaj",
     "Full name" : "Ejaj Alam",
