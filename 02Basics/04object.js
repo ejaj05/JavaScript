@@ -25,3 +25,24 @@ const arr3 = Object.entries(tinderUser)
 // console.log(arr3)
 console.log(tinderUser.hasOwnProperty('isLoggedIn')) // checks if keys are present in object or not 
 
+//Destructuring
+const course = {
+    coursename: "js hindi course",
+    price: '999',
+    courseInstructure:"hitesh"
+}
+const {courseInstructure :instructure} = course
+console.log(instructure)
+
+//API JSON
+
+// {
+//     "coursename" : "js in hindi",
+//     "price" : "free",
+// }
+
+[
+    {},
+    {},
+    {}
+]
