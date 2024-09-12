@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Manipulation</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div>
+        <h1 id="title" class="heading">Dom learning on chai aur code</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <ul>
+            <li class = "list">one</li>
+            <li class = "list">Two</li>
+            <li class = "list">Three</li>
+            <li class = "list">Four</li>
+            <li class = "list">Five</li>
+        </ul>
+    </div>
+</body>
+<script>
+    //Element selector
+    //By Id
+    //const h1 =  document.getElementById("title")
+    //h1.style.color = "Red"
+    //By class
+    const myLi = document.getElementsByClassName("list")
+    Array.from(myLi)
+    myLi.forEach((element) => {element.style.color ="Red"});
+</script>
+</html>
