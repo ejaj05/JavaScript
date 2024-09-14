@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    color: black;
+    background-color: white;
+    overflow: hidden;
+}
+
+nav{
+    width: 100%;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px ;
+}
+
+nav a{
+    text-decoration: none;
+    margin-left: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 8px 20px;
+    color: #212121;
+}
+nav a[aria-current="page"]{
+    color: #000;
+    background-color: #d4d4d4;
+}
+
+main{
+    background-color: grey;
+    text-align: center;
+    padding: 1rem;
+}
+.inputBox{
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+#height{
+    height: 30px;
+}
+#weight{
+    height: 30px;
+}
+.btn{
+    padding: 5px 20px;
+    margin-left: 100px;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    border: none;
+    transition: all 3s;
+}
+.btn:active{
+    opacity: 0.5;
+}
