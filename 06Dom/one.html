@@ -25,13 +25,23 @@
     </div>
 </body>
 <script>
-    //Element selector
-    //By Id
-    //const h1 =  document.getElementById("title")
-    //h1.style.color = "Red"
-    //By class
+    /*Element selector
+    By Id
+    const h1 =  document.getElementById("title")
+    h1.style.color = "Red"
+    By class
     const myLi = document.getElementsByClassName("list")
     Array.from(myLi)
     myLi.forEach((element) => {element.style.color ="Red"});
+    By universal selector
+    const myLi = document.querySelector("li");
+    /myLi.style.color = "Red";
+    */
+    const myLi = document.querySelectorAll("li");
+    const arr = ["Red", "Green", "Blue", "Yellow", "White"];
+    let idx = 0;
+    myLi.forEach((element)=>{
+        element.style.color = arr[idx++];
+    });
 </script>
 </html>
