@@ -1,12 +1,14 @@
 *{
     box-sizing: border-box;
-
 }
-body{
+body {
+    margin: 0;
     font-family: system-ui, sans-serif;
     color: black;
-    background-color: white;
+    background-color: #212121;
+    overflow: hidden;
 }
+
 nav{
     width: 100%;
     background-color: #eee;
@@ -28,27 +30,29 @@ nav a[aria-current="page"]{
     color: #000;
     background-color: #d4d4d4;
 }
-main {
-    margin: 100px auto 100px;
-    width: 80%;
+main{
+    background-color: rgb(73, 71, 71);
     text-align: center;
-  }
-
-.button {
-  width: 100px;
-  height: 100px;
-  border: solid black 2px;
-  display: inline-block;
+    color: white;
+    padding: 10px;
 }
-#grey{
-    background-color: grey;
+h3{
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 10px;
 }
-#white{
-    background-color: white;
+#box{
+    width: 200px;
+    height: 50px;
+    outline: none;
+    border: 5px solid grey;
+    margin-bottom: 20px;
 }
-#blue{
-    background-color: blue;
-}
-#yellow{
-    background-color: yellow;
+.btn{
+    font-size: 1.5rem;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background-color: black;
+    border: none;
+    color: white;
 }
