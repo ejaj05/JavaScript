@@ -41,8 +41,12 @@ main{
     color:white;
 }
 .box{
-    height: 40px;
-    width: 120px;
+    text-align: center;
+    height: 50px;
+    width: 250px;
     background-color: orange;
     border-radius: 10px;
+    color:#000;
+    font-size: 2rem;
+    font-weight: 500;
 }
