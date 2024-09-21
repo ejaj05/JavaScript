@@ -1,14 +1,9 @@
 *{
-    box-sizing: border-box;
-}
-body {
     margin: 0;
-    font-family: system-ui, sans-serif;
-    color: black;
-    background-color: #212121;
-    overflow: hidden;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
-
 nav{
     width: 100%;
     background-color: #eee;
@@ -30,29 +25,52 @@ nav a[aria-current="page"]{
     color: #000;
     background-color: #d4d4d4;
 }
-main{
-    background-color: rgb(73, 71, 71);
+body{
+    background-color: #212121;
+}
+
+.container{
+    background-color: rgb(63, 62, 62);
     text-align: center;
     color: white;
-    padding: 10px;
+    width: 45%;
+    margin:  20px auto;
+    height: 500px;
 }
-h3{
-    font-size: 3rem;
-    font-weight: 500;
-    margin-bottom: 10px;
-}
-#box{
-    width: 200px;
-    height: 50px;
-    outline: none;
-    border: 5px solid grey;
-    margin-bottom: 20px;
-}
-.btn{
-    font-size: 1.5rem;
-    padding: 10px 15px;
-    border-radius: 8px;
+.title-1{
+    margin-bottom: 30px;
     background-color: black;
-    border: none;
+}
+.title-2{
+    font-size: 3rem;
+    margin: 20px 0 10px;
+    font-weight: 500;
+}
+#guess-input{
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 5px solid #565555;
+    outline: none;
+}
+#guess-btn{
+    margin: 20px 0;
+    padding: 8px 15px;
+    font-size: 20px;
+    background-color: #000000;
     color: white;
+    border: none;
+    border-radius: 4px;
+}
+.message{
+    margin: 20px 0 20px;
+    font-size: 2rem;
+}
+.playAgain{
+    margin-top: 30px;
+    padding: 8px 15px;
+    font-size: 20px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 4px;
 }
