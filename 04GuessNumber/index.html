@@ -11,16 +11,24 @@
         <a href="/07Project/index.html" aria-current="page">Home</a>
         <a target="_blank" href="https://www.youtube.com/@chaiaurcode">Youtube channel</a>
     </nav>
-    <main>
-        <h1 style="background-color: black;">Number guessing game</h1>
-        <p>Try and guess a random number between 1 and 100.</p>
-        <p>You have 10 attempts to guess the right number.</p>
-        <h3>Guess the Number</h3>
-        <input type="text" id="box"><br>
-        <button class="btn">Submit guess</button>
-        <p class="prevGuess">Previous guess : </p>
-        <p class="restGuess">Guesses Remaining: 10</p>
-    </main>
+    <div class="container">
+        <h1 class="title-1">Number guessing game </h1>
+        <p>Try and guess a random number between 1 and 100</p>
+        <p>you have 10 attempts to guess the right number</p>
+
+        <form>
+            <h1 class="title-2">Guess a number</h1>
+            <input type="number" id="guess-input" placeholder="Enter your guess"><br>
+            <br>
+            <button id="guess-btn">Submit guess</button>
+        </form>
+
+        <div class="showResult">
+            <p id="result">Previous Guesses :</p><br>
+            <p id="attemptsLeft">Guesses Remaining : 10</p>
+            <p class="message"></p>
+        </div>
+    </div>
 </body>
 <script src="app.js"></script>
 </html>
